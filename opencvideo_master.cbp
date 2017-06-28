@@ -94,7 +94,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/curi/hiro/opencvideo-master/opencvideo.cpp">
+		<Unit filename="/home/curi/hiro/opencvideo-master/openheader.cpp">
 			<Option target="opencvideo_master"/>
 		</Unit>
 		<Unit filename="/home/curi/hiro/opencvideo-master/CMakeLists.txt">

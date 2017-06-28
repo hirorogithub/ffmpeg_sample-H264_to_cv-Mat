@@ -123,32 +123,32 @@ opencvideo_master/fast:
 	$(MAKE) -f CMakeFiles/opencvideo_master.dir/build.make CMakeFiles/opencvideo_master.dir/build
 .PHONY : opencvideo_master/fast
 
-opencvideo.o: opencvideo.cpp.o
+openheader.o: openheader.cpp.o
 
-.PHONY : opencvideo.o
+.PHONY : openheader.o
 
 # target to build an object file
-opencvideo.cpp.o:
-	$(MAKE) -f CMakeFiles/opencvideo_master.dir/build.make CMakeFiles/opencvideo_master.dir/opencvideo.cpp.o
-.PHONY : opencvideo.cpp.o
+openheader.cpp.o:
+	$(MAKE) -f CMakeFiles/opencvideo_master.dir/build.make CMakeFiles/opencvideo_master.dir/openheader.cpp.o
+.PHONY : openheader.cpp.o
 
-opencvideo.i: opencvideo.cpp.i
+openheader.i: openheader.cpp.i
 
-.PHONY : opencvideo.i
+.PHONY : openheader.i
 
 # target to preprocess a source file
-opencvideo.cpp.i:
-	$(MAKE) -f CMakeFiles/opencvideo_master.dir/build.make CMakeFiles/opencvideo_master.dir/opencvideo.cpp.i
-.PHONY : opencvideo.cpp.i
+openheader.cpp.i:
+	$(MAKE) -f CMakeFiles/opencvideo_master.dir/build.make CMakeFiles/opencvideo_master.dir/openheader.cpp.i
+.PHONY : openheader.cpp.i
 
-opencvideo.s: opencvideo.cpp.s
+openheader.s: openheader.cpp.s
 
-.PHONY : opencvideo.s
+.PHONY : openheader.s
 
 # target to generate assembly for a file
-opencvideo.cpp.s:
-	$(MAKE) -f CMakeFiles/opencvideo_master.dir/build.make CMakeFiles/opencvideo_master.dir/opencvideo.cpp.s
-.PHONY : opencvideo.cpp.s
+openheader.cpp.s:
+	$(MAKE) -f CMakeFiles/opencvideo_master.dir/build.make CMakeFiles/opencvideo_master.dir/openheader.cpp.s
+.PHONY : openheader.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... opencvideo_master"
-	@echo "... opencvideo.o"
-	@echo "... opencvideo.i"
-	@echo "... opencvideo.s"
+	@echo "... openheader.o"
+	@echo "... openheader.i"
+	@echo "... openheader.s"
 .PHONY : help
 
 

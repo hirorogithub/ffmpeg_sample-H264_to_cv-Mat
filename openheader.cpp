@@ -1,4 +1,3 @@
-
 #define __STDC_CONSTANT_MACROS
 #include <stdio.h>
 #include <unistd.h>
@@ -9,6 +8,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/objdetect.hpp>
+#include <fstream>
 
 extern "C" {
 #include "libavutil/avutil.h"
@@ -33,13 +33,13 @@ AVCodecContext *pCodecCtx;
 AVFrame *pAvFrame;
 //保存视频流的信息
 AVFormatContext *pFormatCtx;
-int videoindex = -1;
 AVFrame *pFrameBGR;
 int BGRsize;
 uint8_t *out_buffer;
-AVPacket *packet;
-
-
+AVPacket packet;
+struct SwsContext *img_convert_ctx;
+cv::Mat pCvMat;
+int frmcnt = 0;
 
 int  init(char *filename ){
 
@@ -55,6 +55,9 @@ int  init(char *filename ){
     if (avformat_find_stream_info(pFormatCtx, NULL) < 0) {
         printf("Can't find the stream information !\n");
     }
+
+    int videoindex = -1;
+
     //遍历各个流，找到第一个视频流,并记录该流的编码信息
     for (int i = 0; i < pFormatCtx->nb_streams; ++i) {
         if (pFormatCtx->streams[i]->codec->codec_type == AVMEDIA_TYPE_VIDEO) {
@@ -94,69 +97,18 @@ int  init(char *filename ){
     avpicture_fill((AVPicture *) pFrameBGR, out_buffer, AV_PIX_FMT_BGR24,
                    pCodecCtx->width, pCodecCtx->height);
 
-    packet = (AVPacket *) malloc(sizeof(AVPacket));
-}
 
-
-
-int main(int argc, char *argv[])
-{
-
-    if (argc <= 1) {
-        printf("need filename\n");
-        return -1;
-    }
-    char *filename = argv[1];
-
-
-
-    printf("-----------输出文件信息---------\n");
-    av_dump_format(pFormatCtx, 0, filename, 0);
-    printf("------------------------------");
-
-    struct SwsContext *img_convert_ctx;
     img_convert_ctx =
             sws_getContext(pCodecCtx->width, pCodecCtx->height, pCodecCtx->pix_fmt,
                            pCodecCtx->width, pCodecCtx->height, AV_PIX_FMT_BGR24, SWS_BICUBIC, NULL, NULL,
                            NULL);
 
     //opencv
-    cv::Mat pCvMat;
     pCvMat.create(cv::Size(pCodecCtx->width, pCodecCtx->height), CV_8UC3);
-
-    int ret;
-    int got_picture;
+}
 
 
-    cvNamedWindow("RGB", 1);
-    int frmcnt = 0;
-//	time_t t;
-    while (1) {
-        if (av_read_frame(pFormatCtx, packet) >= 0) {
-            if (packet->stream_index == videoindex) {
-                ret = avcodec_decode_video2(pCodecCtx, pAvFrame, &got_picture, packet);
-                if (ret < 0) {
-                    printf("Decode Error.（解码错误）\n");
-                    return -1;
-                }
-                if (got_picture) {
-                    //YUV to RGB
-                    sws_scale(img_convert_ctx, (const uint8_t *const *)pAvFrame->data,
-                              pAvFrame->linesize, 0, pCodecCtx->height, pFrameBGR->data, pFrameBGR->linesize);
-
-                    memcpy(pCvMat.data, out_buffer, size);
-
-                    imshow("RGB", pCvMat);
-                    waitKey(1);
-                    printf("%d\n", frmcnt++);
-                }
-            }
-            av_free_packet(packet);
-        } else {
-            break;
-        }
-    }
-
+void release(){
     av_free(out_buffer);
     av_free(pFrameBGR);
     av_free(pAvFrame);
@@ -167,5 +119,76 @@ int main(int argc, char *argv[])
     cvDestroyWindow("RGB");
 
     system("pause");
+}
+
+
+int decode(unsigned char * input,size_t size){
+
+    cvNamedWindow("RGB", 1);
+
+    int ret;
+    int got_picture;
+
+    packet.data = input;
+    packet.size = size;
+
+
+    ret = avcodec_decode_video2(pCodecCtx, pAvFrame, &got_picture, &packet);
+    if (ret < 0) {
+        printf("Decode Error.（解码错误）\n");
+        return -1;
+    }
+    if (got_picture) {
+        //YUV to RGB
+        sws_scale(img_convert_ctx, (const uint8_t *const *)pAvFrame->data,
+                  pAvFrame->linesize, 0, pCodecCtx->height, pFrameBGR->data, pFrameBGR->linesize);
+
+        memcpy(pCvMat.data, out_buffer, BGRsize);
+
+        imshow("RGB", pCvMat);
+        waitKey(1);
+        printf("%d\n", frmcnt++);
+    }
+
+
+}
+
+
+int main(int argc, char *argv[])
+{
+
+    char *filename = "/home/curi/hiro/ibotn/server/ws_streaming_server_java/264rawFrame/header";
+    init(filename);
+
+    printf("-----------输出文件信息---------\n");
+    av_dump_format(pFormatCtx, 0, filename, 0);
+    printf("------------------------------");
+
+
+    unsigned char buf[690030];
+    for(int j = 1;j<197;j++){
+        std::ifstream  fin("/home/curi/hiro/ibotn/server/ws_streaming_server_java/264rawFrame/outputFrame"
+                           +std::to_string(j),std::ios_base::binary);
+        fin.seekg(0,std::ios::end);
+        int len = fin.tellg();
+        fin.seekg(0,std::ios::beg);
+
+        fin>>buf;
+        decode(buf,len);
+
+    }
+    release();
+
+//	time_t t;
+//    while (1) {
+//        if (av_read_frame(pFormatCtx, packet) >= 0) {
+//
+//
+//        } else {
+//            break;
+//        }
+//    }
+
+
     return 0;
 }
