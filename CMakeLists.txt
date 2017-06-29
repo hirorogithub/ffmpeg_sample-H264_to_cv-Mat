@@ -5,22 +5,17 @@ find_package( OpenCV REQUIRED )
 include_directories(
         ${OpenCV_INCLUDE_DIRS}
         /usr/include/libavcodec
-        /usr/include/libavutil
         /usr/include/libavformat
         /usr/include/libswscale
 )
 
 set(SOURCE_FILES
-#        getYUVFrame.cpp )
-#        opencvideo.cpp )
-        H264Decoder.cpp H264Decoder.h main.cpp)
-#    openheader.cpp)
+        H264Decoder.cpp H264Decoder.h )
 add_executable(opencvideo_master ${SOURCE_FILES} )
 target_link_libraries( opencvideo_master
         ${OpenCV_LIBS}
         /usr/lib/x86_64-linux-gnu/libavcodec.so
         /usr/lib/x86_64-linux-gnu/libavformat.so
-        /usr/lib/x86_64-linux-gnu/libavutil.so
         /usr/lib/x86_64-linux-gnu/libswscale.so
         )
 set_target_properties(opencvideo_master PROPERTIES
