@@ -12,8 +12,9 @@ include_directories(
 
 set(SOURCE_FILES
 #        getYUVFrame.cpp )
-#        opencvideo.cpp)
-    openheader.cpp)
+#        opencvideo.cpp )
+        H264Decoder.cpp H264Decoder.h main.cpp)
+#    openheader.cpp)
 add_executable(opencvideo_master ${SOURCE_FILES} )
 target_link_libraries( opencvideo_master
         ${OpenCV_LIBS}

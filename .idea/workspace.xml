@@ -12,11 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1089731-d0f5-4bcd-90f1-fcecea1d07a6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/H264Decoder.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/H264Decoder.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencvideo_master" afterPath="$PROJECT_DIR$/opencvideo_master" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getYUVFrame.cpp" afterPath="$PROJECT_DIR$/getYUVFrame.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opencvideo_master.cbp" afterPath="$PROJECT_DIR$/opencvideo_master.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openheader.cpp" afterPath="$PROJECT_DIR$/openheader.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -30,33 +34,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sample.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2256">
-              <caret line="94" column="23" lean-forward="false" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
-              <folding>
-                <element signature="e#1215#1233#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="624">
+              <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="avcodec.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/libavcodec/avcodec.h">
+      <file leaf-file-name="window.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/opencv/opencv-3.2.0/modules/highgui/src/window.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88200">
-              <caret line="3675" column="62" lean-forward="false" selection-start-line="3675" selection-start-column="62" selection-end-line="3675" selection-end-column="62" />
+            <state relative-caret-position="8424">
+              <caret line="351" column="5" lean-forward="false" selection-start-line="351" selection-start-column="5" selection-end-line="351" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -65,18 +57,18 @@
       <file leaf-file-name="opencvideo.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/opencvideo.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1074">
-              <caret line="137" column="33" lean-forward="false" selection-start-line="137" selection-start-column="27" selection-end-line="137" selection-end-column="33" />
+            <state relative-caret-position="672">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="openheader.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="openheader.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openheader.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="175" column="17" lean-forward="true" selection-start-line="175" selection-start-column="17" selection-end-line="175" selection-end-column="17" />
+            <state relative-caret-position="3744">
+              <caret line="156" column="31" lean-forward="false" selection-start-line="156" selection-start-column="9" selection-end-line="156" selection-end-column="31" />
               <folding>
                 <element signature="e#31#49#0" expanded="true" />
                 <element signature="e#98#120#0" expanded="true" />
@@ -87,25 +79,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="opencvideo_master.cbp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/opencvideo_master.cbp">
+      <file leaf-file-name="getYUVFrame.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/getYUVFrame.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
-              <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            <state relative-caret-position="6600">
+              <caret line="275" column="5" lean-forward="false" selection-start-line="247" selection-start-column="4" selection-end-line="275" selection-end-column="5" />
+              <folding>
+                <element signature="e#31#49#0" expanded="true" />
+                <element signature="e#137#159#0" expanded="true" />
+                <element signature="e#318#347#0" expanded="true" />
+                <element signature="e#934#953#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getYUVFrame.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/getYUVFrame.cpp">
+      <file leaf-file-name="H264Decoder.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/H264Decoder.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="257" column="5" lean-forward="true" selection-start-line="246" selection-start-column="3" selection-end-line="257" selection-end-column="5" />
+            <state relative-caret-position="1632">
+              <caret line="68" column="44" lean-forward="false" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4272">
+              <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="H264Decoder.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/H264Decoder.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="18" selection-end-column="32" />
               <folding>
-                <element signature="e#31#49#0" expanded="true" />
-                <element signature="e#137#159#0" expanded="true" />
-                <element signature="e#318#347#0" expanded="true" />
+                <element signature="e#150#168#0" expanded="true" />
+                <element signature="e#256#278#0" expanded="true" />
+                <element signature="e#437#466#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,21 +141,11 @@
       <file leaf-file-name="ctime" pinned="false" current-in-tab="false">
         <entry file="file:///usr/include/c++/4.8/ctime">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
+            <state relative-caret-position="600">
               <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
               <folding>
                 <element signature="e#1567#1594#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="opencv.hpp" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/include/opencv2/opencv.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -145,7 +162,6 @@
       <find>avcodec_alloc_</find>
       <find>pAvFrame</find>
       <find>AVCodecContext</find>
-      <find>pCodecCtx</find>
       <find>frame_size</find>
       <find>frame</find>
       <find>INBUF_SIZE</find>
@@ -153,8 +169,11 @@
       <find>Picture</find>
       <find>avcodec_decode_video</find>
       <find>size</find>
-      <find>pFormatCtx</find>
       <find>packet</find>
+      <find>pCodecCtx</find>
+      <find>rame_c</find>
+      <find>pFormatCtx</find>
+      <find>frame_count</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,11 +185,14 @@
         <option value="$PROJECT_DIR$/create.cpp" />
         <option value="$PROJECT_DIR$/opencvideo.c" />
         <option value="$PROJECT_DIR$/sample.cpp" />
-        <option value="$PROJECT_DIR$/getYUVFrame.cpp" />
         <option value="$PROJECT_DIR$/read.cpp" />
         <option value="$PROJECT_DIR$/opencvideo.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/openheader.cpp" />
+        <option value="$PROJECT_DIR$/getYUVFrame.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/H264Decoder.h" />
+        <option value="$PROJECT_DIR$/H264Decoder.cpp" />
       </list>
     </option>
   </component>
@@ -180,6 +202,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="-4" />
@@ -426,7 +449,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="opencvideo_master" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/../ibotn/server/ws_streaming_server_java/264rawFrame/movie" PASS_PARENT_ENVS_2="true" PROJECT_NAME="opencvideo_master" TARGET_NAME="opencvideo_master" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="opencvideo_master" RUN_TARGET_NAME="opencvideo_master">
+    <configuration default="false" name="opencvideo_master" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/../IPCtest/wppClient/cmake-build-debug/frame" PASS_PARENT_ENVS_2="true" PROJECT_NAME="opencvideo_master" TARGET_NAME="opencvideo_master" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="opencvideo_master" RUN_TARGET_NAME="opencvideo_master">
       <envs />
       <method />
     </configuration>
@@ -450,23 +473,24 @@
       <workItem from="1498468263322" duration="1250000" />
       <workItem from="1498532733973" duration="27000" />
       <workItem from="1498534069662" duration="19376000" />
-      <workItem from="1498612351293" duration="4279000" />
+      <workItem from="1498612351293" duration="11038000" />
+      <workItem from="1498638293290" duration="33000" />
+      <workItem from="1498638416823" duration="1050000" />
+      <workItem from="1498699158061" duration="108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35935000" />
+    <option name="totallyTimeSpent" value="43885000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15626726" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16289343" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33367983" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41048592" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -474,6 +498,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -503,18 +528,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/getYUVFrame.cpp</url>
-          <line>248</line>
+          <line>254</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/opencvideo.cpp</url>
-          <line>106</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/opencvideo.cpp</url>
-          <line>100</line>
-          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/openheader.cpp</url>
@@ -538,40 +553,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/include/c++/4.8/ctime">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#1567#1594#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/read.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/include/opencv2/opencv.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4272">
@@ -606,27 +587,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/read.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/create.cpp" />
+    <entry file="file://$PROJECT_DIR$/read.cpp" />
     <entry file="file:///usr/local/include/opencv2/opencv.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -664,27 +630,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/read.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/create.cpp" />
+    <entry file="file://$PROJECT_DIR$/read.cpp" />
     <entry file="file:///usr/local/include/opencv2/opencv.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -722,27 +673,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/read.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/create.cpp" />
+    <entry file="file://$PROJECT_DIR$/read.cpp" />
     <entry file="file:///usr/local/include/opencv2/opencv.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,19 +717,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/opencvideo.c" />
-    <entry file="file://$PROJECT_DIR$/read.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/read.cpp" />
     <entry file="file:///usr/local/include/opencv2/opencv.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,27 +733,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4272">
-          <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/create.cpp" />
     <entry file="file:///usr/local/include/opencv2/opencv.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,7 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,25 +771,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88200">
           <caret line="3675" column="62" lean-forward="false" selection-start-line="3675" selection-start-column="62" selection-end-line="3675" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/read.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/read.cpp" />
     <entry file="file://$PROJECT_DIR$/sample.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2256">
           <caret line="94" column="23" lean-forward="false" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
-          <folding>
-            <element signature="e#1215#1233#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -886,21 +786,87 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
           <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create.cpp" />
+    <entry file="file://$PROJECT_DIR$/openheader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3744">
+          <caret line="156" column="31" lean-forward="false" selection-start-line="156" selection-start-column="9" selection-end-line="156" selection-end-column="31" />
+          <folding>
+            <element signature="e#31#49#0" expanded="true" />
+            <element signature="e#98#120#0" expanded="true" />
+            <element signature="e#298#327#0" expanded="true" />
+            <element signature="e#2806#3053#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getYUVFrame.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6600">
+          <caret line="275" column="5" lean-forward="false" selection-start-line="247" selection-start-column="4" selection-end-line="275" selection-end-column="5" />
+          <folding>
+            <element signature="e#31#49#0" expanded="true" />
+            <element signature="e#137#159#0" expanded="true" />
+            <element signature="e#318#347#0" expanded="true" />
+            <element signature="e#934#953#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opencvideo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create.cpp">
+    <entry file="file://$USER_HOME$/opencv/opencv-3.2.0/modules/highgui/src/window.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="8424">
+          <caret line="351" column="5" lean-forward="false" selection-start-line="351" selection-start-column="5" selection-end-line="351" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/H264Decoder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="68" column="44" lean-forward="false" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4272">
+          <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/include/c++/4.8/ctime">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
+        <state relative-caret-position="600">
           <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
           <folding>
             <element signature="e#1567#1594#0" expanded="true" />
@@ -908,43 +874,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/H264Decoder.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/opencvideo.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1074">
-          <caret line="137" column="33" lean-forward="false" selection-start-line="137" selection-start-column="27" selection-end-line="137" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getYUVFrame.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="257" column="5" lean-forward="true" selection-start-line="246" selection-start-column="3" selection-end-line="257" selection-end-column="5" />
+        <state relative-caret-position="96">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="18" selection-end-column="32" />
           <folding>
-            <element signature="e#31#49#0" expanded="true" />
-            <element signature="e#137#159#0" expanded="true" />
-            <element signature="e#318#347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/openheader.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="175" column="17" lean-forward="true" selection-start-line="175" selection-start-column="17" selection-end-line="175" selection-end-column="17" />
-          <folding>
-            <element signature="e#31#49#0" expanded="true" />
-            <element signature="e#98#120#0" expanded="true" />
-            <element signature="e#298#327#0" expanded="true" />
-            <element signature="e#2806#3053#0" expanded="false" />
+            <element signature="e#150#168#0" expanded="true" />
+            <element signature="e#256#278#0" expanded="true" />
+            <element signature="e#437#466#0" expanded="true" />
           </folding>
         </state>
       </provider>
