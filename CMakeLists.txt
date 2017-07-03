@@ -5,8 +5,9 @@ find_package( OpenCV REQUIRED )
 
 set(CMAKE_CXX_STANDARD 11)
 set(files
-	    H264Decoder_jni.cpp
+#		H264Decoder_jni.cpp
         H264Decoder.cpp H264Decoder.h
+		sample.cpp #for sample
         )
 
 include_directories(
@@ -17,12 +18,14 @@ include_directories(
         /usr/include/libavformat
         /usr/include/libswscale
 )
-add_library(H264Decoder SHARED ${files})
-target_link_libraries(H264Decoder 
+#add_library(H264Decoder SHARED ${files})  for build a .so file
+add_executable(H264Decoder ${files})
+target_link_libraries(H264Decoder
         ${OpenCV_LIBS}
         /usr/lib/x86_64-linux-gnu/libavcodec.so
         /usr/lib/x86_64-linux-gnu/libavformat.so
         /usr/lib/x86_64-linux-gnu/libswscale.so
+		/usr/lib/x86_64-linux-gnu/libavutil.so
         )
 
 

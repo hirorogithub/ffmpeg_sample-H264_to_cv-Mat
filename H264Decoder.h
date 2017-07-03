@@ -33,6 +33,7 @@ class H264Decoder {
 public :
 
     H264Decoder();
+//    ~H264Decoder(); TODO
     void init();
     void decode(unsigned char *inputbuf, size_t size);
     void play();
